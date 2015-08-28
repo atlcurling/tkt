@@ -1,0 +1,313 @@
+[04-Aug-2014 18:46:39 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:46:39 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:46:39 America/Denver] PHP Fatal error:  Using $this when not in object context in /home7/atlcurli/public_html/admin/ep1.php on line 34
+[04-Aug-2014 18:47:48 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:47:48 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:47:48 America/Denver] PHP Fatal error:  Call to undefined method DynHtmlBlock::displayEditForm() in /home7/atlcurli/public_html/admin/ep1.php on line 34
+[04-Aug-2014 18:49:27 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:49:27 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:49:27 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:49:27 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:50:12 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:50:12 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:50:12 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:50:12 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:52:18 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:52:18 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:52:18 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 18:52:18 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 19:14:34 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 86
+[04-Aug-2014 19:21:39 America/Denver] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home7/atlcurli/public_html/tkt0.2/user.php on line 8
+[04-Aug-2014 19:22:34 America/Denver] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home7/atlcurli/public_html/tkt0.2/user.php on line 8
+[04-Aug-2014 19:24:46 America/Denver] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home7/atlcurli/public_html/tkt0.2/user.php on line 8
+[04-Aug-2014 19:24:47 America/Denver] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home7/atlcurli/public_html/tkt0.2/user.php on line 8
+[04-Aug-2014 19:33:35 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 19:33:35 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 19:33:35 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[04-Aug-2014 19:33:35 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 18:33:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 18:33:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 18:33:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 18:33:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:01:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:01:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:01:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:01:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:35 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:35 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:35 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:35 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:36 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:36 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:36 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:36 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:38 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:38 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:38 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:02:38 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:06:35 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:06:35 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:06:35 America/Denver] PHP Catchable fatal error:  Object of class DynHtmlBlock could not be converted to string in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 78
+[07-Aug-2014 19:18:14 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:18:14 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:18:14 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:18:14 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:21:46 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:21:46 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:21:46 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:21:46 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:27:40 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:27:40 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:27:40 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:27:40 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:29:16 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:29:16 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:29:16 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:29:16 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined property: DynHtmlBlock::$left in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 85
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined property: DynHtmlBlock::$right in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 86
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined property: DynHtmlBlock::$bottom in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 88
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined property: DynHtmlBlock::$left in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 85
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined property: DynHtmlBlock::$right in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 86
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined property: DynHtmlBlock::$bottom in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 88
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:36:21 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:37:37 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:37:37 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:37:37 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:37:37 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:53 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:53 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:53 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:38:53 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:56 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:56 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:56 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:56 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:57 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:57 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:57 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:57 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:59 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:59 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:59 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:39:59 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:41:09 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:41:09 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:41:09 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:41:09 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:20 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:20 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:20 America/Denver] PHP Notice:  Undefined variable: halfcols in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 86
+[07-Aug-2014 19:42:20 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:20 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:39 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:39 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:39 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:39 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:53 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:53 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:53 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:42:53 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:44:34 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:44:34 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:44:34 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:44:34 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:48:54 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:48:54 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:48:54 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:48:54 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:50:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:50:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:50:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:50:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:58:11 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:58:11 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:58:11 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:58:11 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:59:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:59:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:59:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 19:59:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:00:51 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:00:51 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:00:51 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:00:51 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:01:33 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:01:33 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:01:33 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[07-Aug-2014 20:01:33 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:09:39 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:09:39 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:09:39 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:09:39 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:10:44 America/Denver] PHP Parse error:  syntax error, unexpected '$page' (T_VARIABLE) in /home7/atlcurli/public_html/admin/ep1.php on line 34
+[09-Aug-2014 13:11:08 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:11:08 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:11:08 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:11:08 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:12:14 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:12:14 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:12:14 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:12:14 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:14 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:14 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:14 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:14 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:18 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:18 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:18 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:18 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:49 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:49 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:49 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:18:49 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:19:33 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:19:33 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:19:33 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:19:33 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:22 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:22 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:22 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:22 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:39 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:39 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:39 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:20:39 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:05 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:05 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:05 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:05 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:08 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:08 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:08 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:21:08 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:22:00 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:22:00 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:22:00 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:22:00 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:25:10 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:25:10 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:25:10 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:25:10 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:26:31 America/Denver] PHP Parse error:  syntax error, unexpected 'define' (T_STRING), expecting function (T_FUNCTION) in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 5
+[09-Aug-2014 13:26:50 America/Denver] PHP Parse error:  syntax error, unexpected 'define' (T_STRING), expecting function (T_FUNCTION) in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 5
+[09-Aug-2014 13:26:51 America/Denver] PHP Parse error:  syntax error, unexpected 'define' (T_STRING), expecting function (T_FUNCTION) in /home7/atlcurli/public_html/lib/DynHtmlBlock2.php on line 5
+[09-Aug-2014 13:27:16 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:27:16 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:27:16 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:27:16 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:27:20 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:27:20 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:27:20 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:27:20 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:28:47 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:28:47 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:28:47 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:28:47 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:03 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:03 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:44 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:44 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:44 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:30:44 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:19 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:19 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:19 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:19 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:28 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:28 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:28 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:31:28 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:35:56 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:35:56 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:35:56 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:35:56 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:27 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:27 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:27 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:27 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:42 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:42 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:42 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:36:42 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:24 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:24 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:24 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:24 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:57 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:57 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:57 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:37:57 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:38:28 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:38:28 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:38:28 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:38:28 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:18 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:18 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:18 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:18 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:49 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:49 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:49 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:40:49 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:41:26 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:41:26 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:41:26 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:41:26 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:42:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:42:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:42:02 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:42:02 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:08 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:08 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:08 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:08 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:21 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:21 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:21 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:43:21 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:45:24 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:45:24 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:45:24 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:45:24 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:15 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:15 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:15 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:15 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:17 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:17 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:17 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[09-Aug-2014 13:46:17 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[15-Aug-2014 07:28:33 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[15-Aug-2014 07:28:33 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[15-Aug-2014 07:28:33 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[15-Aug-2014 07:28:33 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[16-Aug-2014 07:45:37 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[16-Aug-2014 07:45:37 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[16-Aug-2014 07:45:37 America/Denver] PHP Notice:  Undefined index: user in /home7/atlcurli/public_html/tkt0.2/user.php on line 85
+[16-Aug-2014 07:45:37 America/Denver] PHP Notice:  Trying to get property of non-object in /home7/atlcurli/public_html/tkt0.2/user.php on line 85

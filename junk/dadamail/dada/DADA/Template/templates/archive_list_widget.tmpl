@@ -1,0 +1,51 @@
+<!-- begin archive_list_widget.tmpl -->
+
+<!-- tmpl_if allowed_to_view_archives --> 
+
+	<!-- tmpl_loop entries -->
+
+		 <!-- Archive Id: <!-- tmpl_var id --> --> 
+<h2>
+			    <a href="<!-- tmpl_var PROGRAM_URL -->/archive/<!-- tmpl_var uri_escaped_list -->/<!-- tmpl_var id -->/">
+		     <!-- tmpl_var subject -->
+		</a>
+</h2>
+	<p> <em>
+		    Sent <!-- tmpl_var date -->
+		   </em>
+		  </p>
+
+		<!-- tmpl_if message_blurb -->
+
+			  <blockquote><p>
+			   <em>
+			    <!-- tmpl_var message_blurb -->...
+			   </em>
+			  </p>
+			</blockquote>
+
+		<!--/tmpl_if-->
+
+
+	<!--/tmpl_loop-->
+
+
+
+	<!-- tmpl_var index_nav --> 
+
+	<!-- tmpl_var search_form --> 
+
+	<!-- end archive_list_widget.tmpl -->
+	
+<!-- tmpl_else --> 
+
+	<p class="error">
+		Only subscribers may view this list's message archives.
+	</p> 
+	
+<!-- /tmpl_if -->
+
+
+
+
+

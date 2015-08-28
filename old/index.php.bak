@@ -1,0 +1,572 @@
+<?php
+
+	require_once("settings.php");
+	require_once("{$TKTDIR}user.php");
+	session_start();
+
+	require_once("{$TKTDIR}database.php");
+	
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="Templates/base.dwt.php" codeOutsideHTMLIsLocked="false" -->
+
+<?php
+
+require_once('include.php');
+require_once("{$TKTDIR}functions.php");
+require_once("{$TKTDIR}database.php");
+
+?>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>ATLcurling: Home Page</title>
+	<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+<div id="Page">
+<div id="Header">
+  <img src="image/CurlingSheetTitle.png" />
+  <ul>
+	<li><a href="index.php"><img src="image/BlueCurlingStone20L.png"/>Home</a></li>
+	<li><a href="aboutus.php"><img src="image/RedCurlingStone20L.png"/>About Us</a></li>
+	<li><a href="joinus.php"><img src="image/BlueCurlingStone20L.png"/>Join Us</a></li>
+	<li><a href="eventstatus.php"><img src="image/RedCurlingStone20L.png"/>Events</a></li>
+	<li><a href="leagues.php"><img src="image/BlueCurlingStone20L.png"/>Leagues</a></li>
+	<li><a href="photos.php"><img src="image/RedCurlingStone20L.png" />Photos</a></li>
+	<li><a href="pubs.php"><img src="image/BlueCurlingStone20L.png" />Publications</a></li>
+	<li><a href="media.php"><img src="image/RedCurlingStone20L.png" />Media</a></li>
+	<li><a href="schedule.php"><img src="image/BlueCurlingStone20L.png"/>Schedule</a></li>
+	<li><a href="http://bit.ly/atlcurling" target="_blank"><img src="image/RedCurlingStone20L.png"/>Facebook</a></li>
+	<li><a href="/wiki" target="_blank"><img src="image/BlueCurlingStone20L.png"/>Wiki</a></li>
+	<li><a href="contactus.php"><img src="image/RedCurlingStone20L.png"/>Contact Us</a></li>
+  </ul>
+</div>
+<div class="colmask leftmenu">
+  <div class="colleft">
+    <div class="col1"> 
+	  <!-- InstanceBeginEditable name="body" -->
+
+<?php 
+	loginprompt(); 
+	dbconnect();
+?>
+
+		<h1>Atlanta Curling Club: Latest News</h1>
+
+	<?php
+	
+	# Event printing functions
+		function renderEventBlock($hdr, $left, $right, $bottom) {
+			if ($hdr) {
+				?>
+				<h2><?= $hdr ?></h2>
+				<div class="my_wrapper">
+
+				<div class="my_left_box">
+				<?= $left ?>
+				</div>
+			
+				<div class="my_right_box">
+				<?= $right ?>
+				</div>
+			
+				<div class="my_footer">
+				<?= $bottom ?>
+				</div>
+			
+				</div>
+				<?php
+			}
+		}
+		
+		function printOpenCurling() {
+			$hdr = "";
+			$left = "<img align='left' width=400 height=256 src='image/Tatem.delivery.jpeg' />";
+			$right = "";
+			$bottom = "";
+				
+			if (dbgetsingleton("
+				SELECT COUNT(*) > 0 current 
+					FROM event 
+					WHERE eventcd LIKE 'OC%' 
+						AND CURDATE() <= eventdt 
+						AND active
+				", "current")) {
+	
+				$sql = "
+					SELECT DATE_FORMAT(e.eventdt, '%a %b %e, %Y') edt, 
+						TIME_FORMAT(e.advstarttm, '%l:%i %p') etm, 
+						e.mbrprice, 
+						e.guestprice 
+					FROM `event` e 
+					WHERE e.eventcd LIKE 'OC%' 
+						AND CURDATE() <= e.eventdt 
+						AND active 
+					ORDER BY e.eventdt
+					";
+				
+				$res = mysql_query($sql)
+					or die("Error during event select. " . mysql_error());
+				$ix = 0;
+				
+				while ($row = mysql_fetch_assoc($res)) {
+					if ($ix == 0) {
+#						print "<h2>Open Curling on {$row['edt']}</h2>\n";
+						$hdr = "Open Curling on {$row['edt']}";
+						?>
+<!--
+						<div class="bodytext">
+						<div>
+
+						<img align="left" height="50%" width="50%" src="image/Tatem.delivery.jpeg" style="padding-right: 10px; margin-bottom: 4em;" />
+
+						<div style="padding: 4px 4px 4px 4px;">
+						<p>
+						The new curling season has started in Atlanta!
+						Our next Open Curling event is scheduled for <strong><?= $row['edt'] ?> at <?= $row['etm'] ?></strong>.
+						</p>
+-->
+						<?php 
+						$right .= "<p>";
+						$right .= "The new curling season has started in Atlanta! ";
+						$right .= "Our next Open Curling event is scheduled for <strong>{$row['edt']} at {$row['etm']}</strong>. ";
+						$right .= "</p>";
+						?>
+<!--
+						<p>
+						The member price is $<?= $row['mbrprice'] ?>, and the event is $<?= $row['guestprice'] ?> for non-members.
+						All are welcome -- we will have some capability for teaching first-timers.
+						</p>
+-->						
+						<?php
+						$right .= "<p>";
+						$right .= "The member price is $${row['mbrprice']}, and the event is $${row['guestprice']} for non-members. ";
+						$right .= "All are welcome -- we will have some capability for teaching first-timers. ";
+						$right .= "</p>";
+						?>
+<!--
+						<p>
+						Sign up for Open Curling is online.
+						Make sure you <a href="login.php">Login or Register</a> and then go to the 
+						<a href="eventstatus.php">Events page</a> to sign up and pay for upcoming sessions.
+						</p>
+-->
+						<?php
+						$right .= "<p>";
+						$right .= "Sign up for Open Curling is online. ";
+						$right .= "Make sure you <a href='login.php'>Login or Register</a> and then go to the ";
+						$right .= "<a href='eventstatus.php'>Events page</a> to sign up and pay for upcoming sessions. ";
+						$right .= "</p>";
+						?>
+						
+						<?php
+					} else {
+#						print "<div>\n";
+						if ($ix == 1) {
+#							print "<p>Remaining dates for Open Curling:\n";
+#							print "<ul>\n";
+							$bottom .= "<p>Remaining dates for Open Curling:\n";
+							$bottom .= "<ul>\n";
+						}
+#						print "<li>{$row['edt']}</li>\n";
+						$bottom .= "<li>{$row['edt']} at {$row['etm']}</li>\n";
+					}
+	
+					$ix ++;
+				}
+				
+				if ($ix > 1) {
+#					print "</ul>\n";
+#					print "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+#					print "</div>\n";
+					$bottom .= "</ul>\n";
+					$bottom .= "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+				}
+#				print "</div>\n";
+							
+				renderEventBlock($hdr, $left, $right, $bottom);	
+			}
+		}
+		
+		function printLearnToCurl () {
+			$hdr = "";
+			$left = "<img align='left' width=400 height=256 src='image/Maxwell.delivery.jpeg' />";
+			$right = "";
+			$bottom = "";
+
+			if (dbgetsingleton("
+				SELECT COUNT(*) > 0 current 
+					FROM event 
+					WHERE eventcd LIKE 'LTC%' 
+						AND CURDATE() <= eventdt 
+						AND active
+				", "current")) {
+	
+				$sql = "
+					SELECT DATE_FORMAT(e.eventdt, '%a %b %e, %Y') edt, 
+						TIME_FORMAT(e.advstarttm, '%l:%i %p') etm, 
+						e.mbrprice, 
+						e.guestprice 
+					FROM `event` e 
+					WHERE e.eventcd LIKE 'LTC%' 
+						AND CURDATE() <= e.eventdt 
+						AND active 
+					ORDER BY e.eventdt
+					";
+				
+				$res = mysql_query($sql)
+					or die("Error during event select. " . mysql_error());
+				$ix = 0;
+				while ($row = mysql_fetch_assoc($res)) {
+					if ($ix == 0) {
+#						print "<h2>Learn to Curl on {$row['edt']}</h2>\n";
+						$hdr = "Learn to Curl on {$row['edt']}";
+						?>
+<!--
+						<p>
+						We want to teach you the great sport of curling and we have an event specifically designed for doing so.
+						Our next Learn to Curl is scheduled for <strong><?= $row['edt'] ?> at <?= $row['etm'] ?></strong>.
+						</p>
+-->
+						<?php
+						$right .= "<p>";
+						$right .= "We want to teach you the great sport of curling and we have an event specifically designed for doing so. ";
+						$right .= "Our next Learn to Curl is scheduled for <strong>{$row['edt']} at {$row['etm']}</strong>. ";
+						$right .= "</p>";
+						?>
+
+<!--
+						<p>
+						<?php 
+#							$mbrprice = $row['mbrprice'];
+#							$guestprice = $row['guestprice'];
+#							if ($mbrprice == $guestprice) print "The price for this event is \$$guestprice.";
+#							else print "The member price is \$$mbrprice, and the event is \$$guestprice for non-members."; 
+						?>
+<!--
+						All are welcome -- no experience necessary.
+						</p>
+-->
+						<?php
+						$mbrprice = $row['mbrprice'];
+						$guestprice = $row['guestprice'];
+						$right .= "<p>";
+						if ($mbrprice == $guestprice) $right .= "The price for this event is \$$guestprice. ";
+						else $right .= "The member price is \$$mbrprice, and the event is \$$guestprice for non-members. ";
+						$right .= "All are welcome -- no experience necessary. ";
+						$right .= "</p>";
+						?>
+<!--
+						<p>
+						We recommnend signing up for Learn to Curls online since they can fill quickly.
+						Make sure you <a href="login.php">Login or Register</a> and then go to the 
+						<a href="eventstatus.php">Events page</a> to sign up and pay.
+						</p>
+-->						
+						<?php
+						$right .= "<p>";
+						$right .= "We recommnend signing up for Learn to Curls online since they can fill quickly. ";
+						$right .= "Make sure you <a href='login.php'>Login or Register</a> and then go to the ";
+						$right .= "<a href='eventstatus.php'>Events page</a> to sign up and pay. ";
+						$right .= "</p>";
+						?>
+						
+						<?php
+					} else {
+						if ($ix == 1) {
+#							print "<p>Remaining Learn to Curls:\n";
+#							print "<ul>\n";
+							$bottom .= "<p>Remaining Learn to Curls:\n";
+							$bottom .= "<ul>\n";
+						}
+#						print "<li>{$row['edt']}</li>\n";
+						$bottom .= "<li>{$row['edt']}</li>\n";
+					}
+	
+					$ix ++;
+				}
+				if ($ix > 1) {
+#					print "</ul>\n";
+#					print "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+					$bottom .= "</ul>\n";
+					$bottom .= "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+				}
+			}
+			
+			renderEventBlock($hdr, $left, $right, $bottom);
+		}
+
+		function printPickUpCurling () {
+			$hdr = "";
+			$left = "<img align='left' width=400 height=256 src='image/Maxwell.delivery.jpeg' />";
+			$right = "";
+			$bottom = "";
+
+			if (dbgetsingleton("
+				SELECT COUNT(*) > 0 current 
+					FROM event 
+					WHERE eventcd LIKE 'PCA%' 
+						AND CURDATE() <= eventdt 
+						AND active
+				", "current")) {
+	
+				$sql = "
+					SELECT DATE_FORMAT(e.eventdt, '%a %b %e, %Y') edt, 
+						TIME_FORMAT(e.advstarttm, '%l:%i %p') etm, 
+						e.mbrprice, 
+						e.guestprice 
+					FROM `event` e 
+					WHERE e.eventcd LIKE 'PCA%' 
+						AND CURDATE() <= e.eventdt 
+						AND active 
+					ORDER BY e.eventdt
+					";
+				
+				$res = mysql_query($sql)
+					or die("Error during event select. " . mysql_error());
+				$ix = 0;
+				while ($row = mysql_fetch_assoc($res)) {
+					if ($ix == 0) {
+#						print "<h2>Pickup Curling on {$row['edt']}</h2>\n";
+						$hdr = "Pickup Curling on {$row['edt']}";
+						?>
+<!--
+						<p>
+						Our leagues are up and running througn April 1.
+						Didn't get in on the league? 
+						You can still come out and curl in some of our league games!
+						Come to Pickup Curling and you may be able to help fill some openings on one of the teams.
+						Or if others have also signed up you can curl with them on an open sheet.
+						</p>
+-->					
+						<?php
+						$right .= "<p>";
+						$right .= "Our leagues are up and running througn April 1. ";
+						$right .= "Didn't get in on the league? ";
+						$right .= "You can still come out and curl in some of our league games! ";
+						$right .= "Come to Pickup Curling and you may be able to help fill some openings on one of the teams. ";
+						$right .= "Or if others have also signed up you can curl with them on an open sheet. ";
+						$right .= "</p>";
+						?>
+<!--
+						<p>
+						Pickup Curling is every Monday through April 1 at 8:30pm.
+						Our next Pickup Curling is at <strong><?= $row['edt'] ?> at <?= $row['etm'] ?></strong>.
+						</p>
+-->
+						<?php
+						$right .= "<p>";
+						$right .= "Pickup Curling is every Monday through April 1 at 8:30pm. ";
+						$right .= "Our next Pickup Curling is at <strong>{$row['edt']} at {$row['etm']}</strong>. ";
+						?>
+<!--
+						<p>
+-->
+						<?php 
+							$mbrprice = $row['mbrprice'];
+							$guestprice = $row['guestprice'];
+#							if ($mbrprice == $guestprice) print "The price for this event is \$$guestprice.";
+#							else print "The member price is \$$mbrprice, and the event is \$$guestprice for non-members."; 
+						?>
+<!--
+						Only curlers that have already learned the basics of curling should come to Pickup Curling 
+						&mdash; there will be no instruction available.
+						</p>
+-->					
+						<?php
+						$bottom .= "<p>";
+						if ($mbrprice == $guestprice) $bottom .= "The price for this event is \$$guestprice. ";
+						else $bottom .= "The member price is \$$mbrprice, and the event is \$$guestprice for non-members. ";
+						$bottom .= "Only curlers that have already learned the basics of curling should come to Pickup Curling ";
+						$bottom .= "&mdash; there will be no instruction available. ";
+						$bottom .= "</p>";
+						?>
+<!--
+						<p>
+						Just like all events, we recommend registering online. 
+						Make sure you <a href="login.php">Login or Register</a> and then go to the 
+						<a href="eventstatus.php">Events page</a> to sign up and pay.
+						</p>
+-->
+						<?php
+						$bottom .= "<p>";
+						$bottom .= "Just like all events, we recommend registering online. ";
+						$bottom .= "Make sure you <a href='login.php'>Login or Register</a> and then go to the ";
+						$bottom .= "<a href='eventstatus.php'>Events page</a> to sign up and pay. ";
+						$bottom .= "</p>";
+						?>
+						
+						<?php
+					} else {
+						if ($ix == 1) {
+#							print "<p>Remaining Pickup Curling:\n";
+#							print "<ul>\n";
+							$bottom .= "<p>Remaining Pickup Curling:\n";
+							$bottom .= "<ul>\n";
+						}
+#						print "<li>{$row['edt']}</li>\n";
+						$bottom .= "<li>{$row['edt']}</li>\n";
+					}
+	
+					$ix ++;
+				}
+				if ($ix > 1) {
+#					print "</ul>\n";
+#					print "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+					$bottom .= "</ul>\n";
+					$bottom .= "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+				}
+			}
+			
+			renderEventBlock($hdr, $left, $right, $bottom);
+		}
+
+	# Print the events in order by what comes first
+	
+		$ocdt = dbgetsingleton("SELECT MIN(eventdt) ed FROM event WHERE eventcd LIKE 'OC%' AND CURDATE() <= eventdt AND active",
+				"ed");
+		$ltcdt = dbgetsingleton("SELECT MIN(eventdt) ed FROM event WHERE eventcd LIKE 'LTC%' AND CURDATE() <= eventdt AND active",
+			"ed");
+		$pucdt = dbgetsingleton("SELECT MIN(eventdt) ed FROM event WHERE eventcd LIKE 'PCA%' AND CURDATE() <= eventdt AND active",
+			"ed");
+		
+#		print "ocdt: $ocdt<br/>ltcdt: $ltcdt<br/>pucdt: $pucdt<br/>";
+		
+		if ($ocdt < $ltcdt) {
+			if ($pucdt < $ocdt) {
+				printPickupCurling();
+				printOpenCurling();
+				printLearnToCurl();
+			} else {
+				printOpenCurling();
+				if ($pucdt < $ltcdt) {
+					printPickupCurling();
+					printLearnToCurl();
+				} else {
+					printPickupCurling();
+					printLearnToCurl();
+				}
+			}
+		} else {
+			if ($pucdt < $ltcdt) {
+				printPickupCurling();
+				printLearnToCurl();
+				printOpenCurling();
+			} else {
+				printLearnToCurl();
+				if ($pucdt < $ocdt) {
+					printPickupCurling();
+					printOpenCurling();
+				} else {
+					printOpenCurling();
+					printPickupCurling();
+				}
+			}
+		}
+				
+		?>
+
+		<h2>Photos Now Available</h2>
+		<div class="bodytext">
+		<p>
+		Atlanta Curling Club welcomes our new vendor, <a href="http://hhmultimediallc.zenfolio.com/">H&H Multimedia LLC</a>, who joined us on Monday, Feb 27 for our Monday Night Curling event to
+		cover the event.
+		You can find the shots they took at <a href="http://hhmultimediallc.zenfolio.com/p666272751">their web site</a> and you can purchase hi-res digital photos for your own use for 
+		only $1 each.
+		We encourage you to support Steve and Sandy Hampton in their photographic efforts -- 
+		it is a highly cost effective way for us to get some photography for our events!
+		</p>
+		</div>
+		
+		<h2>Web Site Registration</h2>
+		<div class="bodytext">
+		<p>As part of the online signup for scheduled curling events, please create yourself an account using the <b>login / register</b> link in the upper right corner. You can then go to the <a href="eventstatus.php">Events page</a> to register for upcoming events.</p>
+		<p>Online registration for events requires a <a href="http://paypal.com">PayPal account</a>, create one there if you do not have one (click the <b>Sign Up</b> link at the top of the page). </p>
+		<p>PayPal is a trusted vendor of the Atlanta Curling Club, and all online payments will be processed by them.
+		You will need to have an account on PayPal, and you will need to be able to log into it when reservations are made.
+		(If you already have a PayPal account you will not have to create a new one.)</p>
+		</div>
+
+		<h2>Marietta Ice Center</h2>
+		<div class="bodytext">
+		To find the Marietta Ice Center be persistent! It is located behind the Parkaire Mall at the intersection of Johnson Ferry and Lower Roswell.
+
+			<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Marietta+Ice+Center,+4880+Lower+Roswell+Rd,+Marietta,+GA+30068&amp;aq=&amp;sll=33.978603,-84.48822&amp;sspn=0.154876,0.308647&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Marietta+Ice+Center,&amp;hnear=4880+Lower+Roswell+Rd,+Marietta,+Cobb,+Georgia+30068&amp;t=m&amp;ll=33.965697,-84.40798&amp;spn=0.008542,0.013733&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Marietta+Ice+Center,+4880+Lower+Roswell+Rd,+Marietta,+GA+30068&amp;aq=&amp;sll=33.978603,-84.48822&amp;sspn=0.154876,0.308647&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Marietta+Ice+Center,&amp;hnear=4880+Lower+Roswell+Rd,+Marietta,+Cobb,+Georgia+30068&amp;t=m&amp;ll=33.965697,-84.40798&amp;spn=0.008542,0.013733&amp;z=16&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>		
+
+		</div>
+
+									  <!-- InstanceEndEditable -->
+	</div><!-- col1 -->
+    <div class="col2">
+	  <center>
+	  <?php
+	  /*
+	  echo "<a href='$wikiupdurl'>updates</a>";
+	  echo " -- ";
+	  echo "<a href='$wikitalkurl'>discuss</a>";
+	  echo "\n";
+	  */
+	  ?>
+
+	  </center>
+<!--	  <hr /> -->
+      <!-- InstanceBeginEditable name="links" -->
+
+	  <!-- InstanceEndEditable -->	
+<!--      <hr /> --><!-- #BeginLibraryItem "/Library/upcoming.lbi" -->
+<div id="Title">
+	Upcoming Events
+</div>
+
+<?php
+
+	dbconnect();
+
+	$sql = 
+		"SELECT eventnm, DATE_FORMAT(eventdt, '%a %b %e, %Y') dt, TIME_FORMAT(advstarttm, '%l:%i %p') tm, description " .
+		"  FROM event " .
+		"  WHERE eventdt >= CURDATE() " .
+		"    AND active " .
+		"  ORDER BY eventdt";
+		
+	$result = mysql_query($sql);
+	while ($row = mysql_fetch_assoc($result)) {
+		echo "<div class='event'>\n";
+		echo "<div id='event-title'>{$row['eventnm']}</div>\n";
+		echo "<div id='event-datetime'>{$row['dt']} @ {$row['tm']}</div>\n";
+		echo "<div id='event-detail'>{$row['description']}</div>\n";
+		echo "</div>\n";
+	}
+
+?>
+
+<!-- #EndLibraryItem --></div>
+    <!-- col2 -->
+  </div><!-- colleft -->
+</div><!-- colmask -->
+<div id="Footer">
+    <p>
+		<a href="index.php">Home</a> &nbsp; -- &nbsp; 
+		<a href="aboutus.php">About Us</a> &nbsp; -- &nbsp; 
+		<a href="joinus.php">Join Us</a> &nbsp; -- &nbsp; 
+		<a href="eventstatus.php">Events</a> &nbsp; -- &nbsp; 
+		<a href="leagues.php">Leagues</a> &nbsp; -- &nbsp; 
+		<a href="photos.php">Photos</a> &nbsp; -- &nbsp; 
+		<a href="pubs.php">Publications</a> &nbsp; -- &nbsp; 
+		<a href="media.php">Media</a> &nbsp; -- &nbsp; 
+		<a href="schedule.php">Schedule</a> &nbsp; -- &nbsp; 
+		<a href="http://bit.ly/atlcurling" target="_blank">Facebook</a> &nbsp; -- &nbsp; 
+		<a href="/wiki" target="_blank">Wiki</a> &nbsp; -- &nbsp; 
+		<a href="contactus.php">Contact Us</a>
+
+	</p>
+	<p>Curl with us! Copyright &copy; 2012 Atlanta Curling Club, Inc., All Rights Reserved</p>
+</div><!-- Footer -->
+</div><!-- Page -->
+<?php dispdebug(); ?>
+</body>
+<!-- InstanceEnd --></html>

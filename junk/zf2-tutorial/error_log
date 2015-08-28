@@ -1,0 +1,34 @@
+[29-Dec-2014 09:42:21 America/Denver] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Album) could not be initialized.' in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:189
+Stack trace:
+#0 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(163): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Album')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home7/atlcurli/public_html/zf2-tutorial/vendor/zen in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 189
+[29-Dec-2014 09:42:38 America/Denver] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Exception\RuntimeException' with message 'Module (Album) could not be initialized.' in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php:189
+Stack trace:
+#0 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(163): Zend\ModuleManager\ModuleManager->loadModuleByName(Object(Zend\ModuleManager\ModuleEvent))
+#1 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php(90): Zend\ModuleManager\ModuleManager->loadModule('Album')
+#2 [internal function]: Zend\ModuleManager\ModuleManager->onLoadModules(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\ModuleManager\ModuleEvent))
+#4 /home7/atlcurli/public_html/zf2-tutorial/vendor/zen in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/ModuleManager.php on line 189
+[29-Dec-2014 10:24:05 America/Denver] PHP Parse error:  syntax error, unexpected '/', expecting ',' or ';' in /home7/atlcurli/public_html/zf2-tutorial/module/Album/Module.php on line 5
+[29-Dec-2014 10:33:29 America/Denver] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Listener\Exception\InvalidArgumentException' with message 'Config being merged must be an array, implement the Traversable interface, or be an instance of Zend\Config\Config. integer given.' in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php:335
+Stack trace:
+#0 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php(366): Zend\ModuleManager\Listener\ConfigListener->addConfig('config/autoload...', 1)
+#1 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php(144): Zend\ModuleManager\Listener\ConfigListener->addConfigByPath('config/autoload...', 'glob_path')
+#2 [internal function]: Zend\ModuleManager\Listener\ConfigListener->onMergeConfig(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/ze in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php on line 335
+[29-Dec-2014 10:33:48 America/Denver] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Listener\Exception\InvalidArgumentException' with message 'Config being merged must be an array, implement the Traversable interface, or be an instance of Zend\Config\Config. integer given.' in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php:335
+Stack trace:
+#0 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php(366): Zend\ModuleManager\Listener\ConfigListener->addConfig('config/autoload...', 1)
+#1 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php(144): Zend\ModuleManager\Listener\ConfigListener->addConfigByPath('config/autoload...', 'glob_path')
+#2 [internal function]: Zend\ModuleManager\Listener\ConfigListener->onMergeConfig(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/ze in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php on line 335
+[29-Dec-2014 10:33:49 America/Denver] PHP Fatal error:  Uncaught exception 'Zend\ModuleManager\Listener\Exception\InvalidArgumentException' with message 'Config being merged must be an array, implement the Traversable interface, or be an instance of Zend\Config\Config. integer given.' in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php:335
+Stack trace:
+#0 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php(366): Zend\ModuleManager\Listener\ConfigListener->addConfig('config/autoload...', 1)
+#1 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php(144): Zend\ModuleManager\Listener\ConfigListener->addConfigByPath('config/autoload...', 'glob_path')
+#2 [internal function]: Zend\ModuleManager\Listener\ConfigListener->onMergeConfig(Object(Zend\ModuleManager\ModuleEvent))
+#3 /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/ze in /home7/atlcurli/public_html/zf2-tutorial/vendor/zendframework/zendframework/library/Zend/ModuleManager/Listener/ConfigListener.php on line 335
+[29-Dec-2014 10:41:32 America/Denver] PHP Fatal error:  Class 'Album\Model\Album' not found in /home7/atlcurli/public_html/zf2-tutorial/module/Album/Module.php on line 45

@@ -1,0 +1,6 @@
+<?php
+
+$TKTDIR = "";
+$ENV = "staging";
+
+?>

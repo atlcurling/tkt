@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Change List Short Name</title>
+<link rel="stylesheet" href="/Users/justin/Documents/DadaMail/build/tmp/dada/extras/documentation/pod_source/pod_styles.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:_postfix@neige.apple.com" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#plugin__change_list_shortname_cgi___change_your_mailing_list_s_short_name">Plugin: change_list_shortname.cgi - Change your mailing list's Short Name</a></li>
+	<ul>
+
+		<li><a href="#caveats">CAVEATS</a></li>
+		<ul>
+
+			<li><a href="#sql_backend_only">SQL backend-only</a></li>
+			<li><a href="#always_make_a_backup_of_your_complete_database">Always make a backup of your complete database</a></li>
+			<li><a href="#text_logs_are_not_processed">Text Logs are not processed</a></li>
+			<li><a href="#potential_susbcription_form_link_breakage">Potential Susbcription Form/Link Breakage</a></li>
+		</ul>
+
+	</ul>
+
+	<li><a href="#installation">Installation</a></li>
+	<ul>
+
+		<li><a href="#change_permissions_of_change_list_shortname_cgi_to_755">Change permissions of &quot;change_list_shortname.cgi&quot; to 755</a></li>
+		<li><a href="#configure_your__dada_config_file">Configure your .dada_config file</a></li>
+	</ul>
+
+	<li><a href="#copyright">COPYRIGHT</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="plugin__change_list_shortname_cgi___change_your_mailing_list_s_short_name">Plugin: change_list_shortname.cgi - Change your mailing list's Short Name</a></h1>
+<p>Your mailing list's, <strong>Short Name</strong> is what Dada Mail uses as a unique identifier internally to tell your mailing list apart from every other mailing list. This Short Name is picked out, when you create your mailing list. Although used internally, you may also see it in the various query strings Dada Mail sets for navigation and email confirmations.</p>
+<p>Because of this public view, or an otherwise internal name, you may want to <em>change</em> the List Short Name. Perhaps you picked out a really bad Short Name like, <strong>temporarytest</strong> or <strong>listthree</strong> and you've found that your mailing list isn't so temporary, or it's the only mailing list you have, instead of being in a series.</p>
+<p>This plugin allows you to change your List Short Name</p>
+<p>
+</p>
+<h2><a name="caveats">CAVEATS</a></h2>
+<p>There's some major caveats when using this plugin, that you want to be aware of, before using it to change your List Short Name</p>
+<p>
+</p>
+<h3><a name="sql_backend_only">SQL backend-only</a></h3>
+<p>This plugin only works if you are using one of the SQL backends: <strong>MySQL</strong>, <strong>PostgreSQL</strong>, or <strong>SQLite</strong>. It will not work with the <strong>Default</strong> backend.</p>
+<p>
+</p>
+<h3><a name="always_make_a_backup_of_your_complete_database">Always make a backup of your complete database</a></h3>
+<p>We encourage you to make a backup of your complete SQL database, before using this plugin. Although checks are made to verify there won't be any problems with using a new List Short Name for a current mailing list, we still want you to err on the side of caution.</p>
+<p>
+</p>
+<h3><a name="text_logs_are_not_processed">Text Logs are not processed</a></h3>
+<p>This plugin works by changing the List Short Name found in the various tables in your SQL database that makes up your Dada Mail Mailing Lists. Text Logs, such as your error log or usage log are not touched.</p>
+<p>
+</p>
+<h3><a name="potential_susbcription_form_link_breakage">Potential Susbcription Form/Link Breakage</a></h3>
+<p>Any current static Subscription forms, and any subscription/unsubscription links embedded in already sent email messages will most likely <strong>break</strong>, once you've changed your List Short Name. You will potentially need to update the Subscription forms located on your website, but there's nothing you can do with the links in any sent email messages.</p>
+<p>
+</p>
+<hr />
+<h1><a name="installation">Installation</a></h1>
+<p>This plugin can be installed during a Dada Mail install/upgrade, using the included installer that comes with Dada Mail. The below installation instructions go through how to install the plugin manually.</p>
+<p>
+</p>
+<h2><a name="change_permissions_of_change_list_shortname_cgi_to_755">Change permissions of &quot;change_list_shortname.cgi&quot; to 755</a></h2>
+<p>The, <code>change_list_shortname.cgi</code> plugin will be located in your, <em>dada/plugins</em> diretory. Change the script to, <code>755</code></p>
+<p>
+</p>
+<h2><a name="configure_your__dada_config_file">Configure your .dada_config file</a></h2>
+<p>Now, edit your <code>.dada_config</code> file, so that it shows the plugin in the left-hand menu, under the, <strong>Plugins</strong> heading:</p>
+<p>First, see if the following lines are present in your <code>.dada_config</code> file:</p>
+<pre>
+ # start cut for list control panel menu
+ =cut</pre>
+<pre>
+ =cut
+ # end cut for list control panel menu</pre>
+<p>If they are, remove them.</p>
+<p>Then, find these lines:</p>
+<pre>
+ #                                      {
+ #                                      -Title      =&gt; 'Change Your List Short Name',
+ #                                      -Title_URL  =&gt; $PLUGIN_URL.&quot;/change_list_shortname.cgi&quot;,
+ #                                      -Function   =&gt; 'change_list_shortname',
+ #                                      -Activated  =&gt; 0,
+ #                                      },
+
+</pre>
+<p>Uncomment the lines, by taking off the, &quot;#&quot;'s:</p>
+<pre>
+                                        {
+                                        -Title      =&gt; 'Change Your List Short Name',
+                                        -Title_URL  =&gt; $PLUGIN_URL.&quot;/change_list_shortname.cgi&quot;,
+                                        -Function   =&gt; 'change_list_shortname',
+                                        -Activated  =&gt; 0,
+                                        },
+
+</pre>
+<p>Save your <code>.dada_config</code> file.</p>
+<p>You can now log into your List Control Panel (make sure to log in with the <strong>Dada Mail Root Password</strong>) and under the, <strong>plugins</strong> heading you should now see a linked entitled, &quot;Change Your List Short Name&quot;. Clicking that link will bring you to this plugin.</p>
+<p>
+</p>
+<hr />
+<h1><a name="copyright">COPYRIGHT</a></h1>
+<p>Copyright (c) 1999 - 2012</p>
+<p>Justin Simoni</p>
+<p><a href="http://justinsimoni.com">http://justinsimoni.com</a></p>
+<p>All rights reserved.</p>
+<p>This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.</p>
+
+</body>
+
+</html>

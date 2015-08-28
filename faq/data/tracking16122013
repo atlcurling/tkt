@@ -1,0 +1,17 @@
+7518;new_session;0;192.95.37.253;action=artikel&cat=4&id=18&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=4&id=18&artlang=en;Mozilla/5.0 (X11, Ubuntu, Linux x86_64, rv:16.0) Gecko/20100101 Firefox/16.0;1387159618;
+7519;article_view;18;192.95.37.253;action=artikel&cat=4&id=18&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=4&id=18&artlang=en;Mozilla/5.0 (X11, Ubuntu, Linux x86_64, rv:16.0) Gecko/20100101 Firefox/16.0;1387159618;
+7520;new_session;0;113.12.154.196;;;Mozilla/4.0 (compatible, Win32, WinHttp.WinHttpRequest.5);1387163165;
+7521;new_session;0;113.12.154.196;;;Mozilla/4.0 (compatible, Win32, WinHttp.WinHttpRequest.5);1387163170;
+7520;show_category;1;113.12.154.196;sid=7520&lang=en&action=show&cat=1;;Mozilla/4.0 (compatible, Win32, WinHttp.WinHttpRequest.5);1387163184;
+7522;new_session;0;113.12.154.196;action=news&newsid=1&newslang=en;;Mozilla/4.0 (compatible, Win32, WinHttp.WinHttpRequest.5);1387163186;
+7523;news_view;;113.12.154.196;action=news&newsid=1&newslang=en;;Mozilla/4.0 (compatible, Win32, WinHttp.WinHttpRequest.5);1387163186;
+7524;new_session;0;198.50.187.98;action=artikel&cat=4&id=18&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=4&id=18&artlang=en;Mozilla/4.0 (compatible, MSIE 8.0, Windows NT 5.1, Trident/4.0, MRA 6.0 (build 5993), MRA 8.0 (build 5784), InfoPath.2);1387168177;
+7525;article_view;18;198.50.187.98;action=artikel&cat=4&id=18&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=4&id=18&artlang=en;Mozilla/4.0 (compatible, MSIE 8.0, Windows NT 5.1, Trident/4.0, MRA 6.0 (build 5993), MRA 8.0 (build 5784), InfoPath.2);1387168177;
+7526;old_session;6507;192.241.188.120;sid=6507&lang=en&action=add&cat=0;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1);1387181326;
+6507;new_entry;0;192.241.188.120;sid=6507&lang=en&action=add&cat=0;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1);1387181326;
+7527;new_session;0;94.23.233.204;;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1);1387181328;
+7527;new_entry;0;94.23.233.204;sid=6507&lang=en&action=add&cat=0;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1);1387181328;
+7528;new_session;0;23.89.39.92;action=artikel&cat=4&id=18&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=4&id=18&artlang=en;Opera/9.80 (Windows NT 6.1, U, ru) Presto/2.7.39 Version/11.00;1387198626;
+7529;article_view;18;23.89.39.92;action=artikel&cat=4&id=18&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=4&id=18&artlang=en;Opera/9.80 (Windows NT 6.1, U, ru) Presto/2.7.39 Version/11.00;1387198626;
+7530;new_session;0;23.89.39.92;;http://www.atlcurling.org/faq/index.php;Mozilla/5.0 (Windows NT 5.1, rv:8.0) Gecko/20100101 Firefox/8.0;1387207944;
+7531;new_session;0;153.2.247.30;;http://atlcurling.org/faq.php;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, Trident/5.0);1387224928;

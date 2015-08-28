@@ -1,0 +1,408 @@
+<?php
+
+	require_once("settings2.php");
+	require_once("{$TKTDIR}user.php");
+	session_start();
+
+	require_once('include.php');
+
+	require_once("{$TKTDIR}functions.php");
+	require_once("{$TKTDIR}database.php");
+
+	require_once("DynHtmlPage.php");
+	require_once("DynHtmlBlock.php");
+
+	$pageName = "Home Page";
+
+	DynHtmlPage::docHeader($pageName);
+	
+	echo "<div class='colmask leftmenu'>\n";
+
+	DynHtmlPage::header();
+
+	loginprompt(); 
+	dbconnect();
+	
+	echo "<meta property='fb:admins' content='100000225422795' />\n";
+ 	echo "<div class='colleft'>\n";
+
+	$page = new DynHtmlPage($pageName);
+	$page->load($pageName);
+	$page->displayHeader();
+
+	foreach($page->block as $block) 
+		if ($block->seq < 1000) 
+			$block->display();
+
+	
+# Event printing functions
+	function renderEventBlock($hdr, $left, $right, $bottom) {
+		if ($hdr) {
+			?>
+			<h2><?= $hdr ?></h2>
+			<div class="my_wrapper">
+
+			<div class="my_left_box">
+			<?= $left ?>
+			</div>
+		
+			<div class="my_right_box">
+			<?= $right ?>
+			</div>
+		
+			<div class="my_footer">
+			<?= $bottom ?>
+			</div>
+		
+			</div>
+			<?php
+		}
+	}
+	
+	function printOpenCurling() {
+		$hdr = "";
+		$left = "<img align='left' width=400 height=256 src='image/Tatem.delivery.jpeg' />";
+		$right = "";
+		$bottom = "";
+			
+		if (dbgetsingleton("
+			SELECT COUNT(*) > 0 current 
+				FROM event 
+				WHERE eventcd LIKE 'OC%' 
+					AND CURDATE() <= eventdt 
+					AND active
+			", "current")) {
+
+			$sql = "
+				SELECT DATE_FORMAT(e.eventdt, '%a %b %e, %Y') edt, 
+					TIME_FORMAT(e.advstarttm, '%l:%i %p') etm, 
+					e.mbrprice, 
+					e.guestprice 
+				FROM `event` e 
+				WHERE e.eventcd LIKE 'OC%' 
+					AND CURDATE() <= e.eventdt 
+					AND active 
+				ORDER BY e.eventdt
+				";
+			
+			$res = mysql_query($sql)
+				or die("Error during event select. " . mysql_error());
+			$ix = 0;
+			
+			while ($row = mysql_fetch_assoc($res)) {
+				if ($ix == 0) {
+					$hdr = "Open Curling on {$row['edt']}";
+					?>
+
+					<?php 
+					$right .= "<p>";
+					$right .= "The curling season continues in Atlanta! ";
+					$right .= "Our next Open Curling event is scheduled for <strong>{$row['edt']} at {$row['etm']}</strong>. ";
+					$right .= "</p>";
+					?>
+
+					<?php
+					$right .= "<p>";
+					$right .= "The member price is $${row['mbrprice']}, and the event is $${row['guestprice']} for non-members. ";
+					$right .= "All are welcome -- we will have some capability for teaching first-timers. ";
+					$right .= "</p>";
+					?>
+
+					<?php
+					$right .= "<p>";
+					$right .= "Sign up for Open Curling is online. ";
+					$right .= "Make sure you <a href='login.php'>Login or Register</a> and then go to the ";
+					$right .= "<a href='eventstatus.php'>Events page</a> to sign up and pay for upcoming sessions. ";
+					$right .= "</p>";
+					?>
+					
+					<?php
+				} else {
+					if ($ix == 1) {
+						$bottom .= "<p>Remaining dates for Open Curling:\n";
+						$bottom .= "<ul>\n";
+					}
+					$bottom .= "<li>{$row['edt']} at {$row['etm']}</li>\n";
+				}
+
+				$ix ++;
+			}
+			
+			if ($ix > 1) {
+				$bottom .= "</ul>\n";
+				$bottom .= "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+			}
+						
+			renderEventBlock($hdr, $left, $right, $bottom);	
+		}
+	}
+	
+	function printLearnToCurl () {
+		$hdr = "";
+		$left = "<img align='left' width=400 height=256 src='image/Maxwell.delivery.jpeg' />";
+		$right = "";
+		$bottom = "";
+
+		if (dbgetsingleton("
+			SELECT COUNT(*) > 0 current 
+				FROM event 
+				WHERE eventcd LIKE 'LTC%' 
+					AND CURDATE() <= eventdt 
+					AND active
+			", "current")) {
+
+			$sql = "
+				SELECT DATE_FORMAT(e.eventdt, '%a %b %e, %Y') edt, 
+					TIME_FORMAT(e.advstarttm, '%l:%i %p') etm, 
+					e.mbrprice, 
+					e.guestprice 
+				FROM `event` e 
+				WHERE e.eventcd LIKE 'LTC%' 
+					AND CURDATE() <= e.eventdt 
+					AND active 
+				ORDER BY e.eventdt
+				";
+			
+			$res = mysql_query($sql)
+				or die("Error during event select. " . mysql_error());
+			$ix = 0;
+			while ($row = mysql_fetch_assoc($res)) {
+				if ($ix == 0) {
+#						print "<h2>Learn to Curl on {$row['edt']}</h2>\n";
+					$hdr = "Learn to Curl on {$row['edt']}";
+					?>
+
+					<?php
+					$right .= "<p>";
+					$right .= "We want to teach you the great sport of curling and we have an event specifically designed for doing so. ";
+					$right .= "Our next Learn to Curl is scheduled for <strong>{$row['edt']} at {$row['etm']}</strong>. ";
+					$right .= "</p>";
+					?>
+
+					<?php
+					$mbrprice = $row['mbrprice'];
+					$guestprice = $row['guestprice'];
+					$right .= "<p>";
+					if ($mbrprice == $guestprice) $right .= "The price for this event is \$$guestprice. ";
+					else $right .= "The member price is \$$mbrprice, and the event is \$$guestprice for non-members. ";
+					$right .= "All are welcome -- no experience necessary. ";
+					$right .= "</p>";
+					?>
+
+					<?php
+					$right .= "<p>";
+					$right .= "We recommnend signing up for Learn to Curls online since they can fill quickly. ";
+					$right .= "Make sure you <a href='login.php'>Login or Register</a> and then go to the ";
+					$right .= "<a href='eventstatus.php'>Events page</a> to sign up and pay. ";
+					$right .= "</p>";
+					?>
+					
+					<?php
+				} else {
+					if ($ix == 1) {
+						$bottom .= "<p>Remaining Learn to Curls:\n";
+						$bottom .= "<ul>\n";
+					}
+					$bottom .= "<li>{$row['edt']}</li>\n";
+				}
+
+				$ix ++;
+			}
+			if ($ix > 1) {
+				$bottom .= "</ul>\n";
+				$bottom .= "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+			}
+		}
+		
+		renderEventBlock($hdr, $left, $right, $bottom);
+	}
+
+	function printPickUpCurling () {
+		$hdr = "";
+		$left = "<img align='left' width=400 height=256 src='image/Maxwell.delivery.jpeg' />";
+		$right = "";
+		$bottom = "";
+
+		if (dbgetsingleton("
+			SELECT COUNT(*) > 0 current 
+				FROM event 
+				WHERE eventcd LIKE 'PC%' 
+					AND CURDATE() <= eventdt 
+					AND active
+			", "current")) {
+
+			$sql = "
+				SELECT DATE_FORMAT(e.eventdt, '%a %b %e, %Y') edt, 
+					TIME_FORMAT(e.advstarttm, '%l:%i %p') etm, 
+					e.mbrprice, 
+					e.guestprice 
+				FROM `event` e 
+				WHERE e.eventcd LIKE 'PC%' 
+					AND CURDATE() <= e.eventdt 
+					AND active 
+				ORDER BY e.eventdt
+				";
+			
+			$res = mysql_query($sql)
+				or die("Error during event select. " . mysql_error());
+			$ix = 0;
+			while ($row = mysql_fetch_assoc($res)) {
+				if ($ix == 0) {
+					$hdr = "Pickup Curling on {$row['edt']}";
+					?>
+
+					<?php
+					$right .= "<p>";
+					$right .= "Our leagues are up and running througn Feb 5. ";
+					$right .= "Didn't get in on the league? ";
+					$right .= "We will be starting two new leagues in early March.";
+					$right .= "</p>";
+					?>
+
+					<?php
+					$right .= "<p>";
+					$right .= "Pickup Curling is every Wednesday through Feb 5 at 7:30pm. ";
+					$right .= "Our next Pickup Curling is at <strong>{$row['edt']} at {$row['etm']}</strong>. ";
+					?>
+
+					<?php 
+						$mbrprice = $row['mbrprice'];
+						$guestprice = $row['guestprice'];
+					?>
+
+					<?php
+					$bottom .= "<p>";
+					if ($mbrprice == $guestprice) $bottom .= "The price for this event is \$$guestprice. ";
+					else $bottom .= "The member price is \$$mbrprice, and the event is \$$guestprice for non-members. ";
+					$bottom .= "Only curlers that have already learned the basics of curling should come to Pickup Curling ";
+					$bottom .= "&mdash; there will be no instruction available. ";
+					$bottom .= "</p>";
+					?>
+
+					<?php
+					$bottom .= "<p>";
+					$bottom .= "Just like all events, we recommend registering online. ";
+					$bottom .= "Make sure you <a href='login.php'>Login or Register</a> and then go to the ";
+					$bottom .= "<a href='eventstatus.php'>Events page</a> to sign up and pay. ";
+					$bottom .= "</p>";
+					?>
+					
+					<?php
+				} else {
+					if ($ix == 1) {
+						$bottom .= "<p>Remaining Pickup Curling:\n";
+						$bottom .= "<ul>\n";
+					}
+					$bottom .= "<li>{$row['edt']}</li>\n";
+				}
+
+				$ix ++;
+			}
+			if ($ix > 1) {
+				$bottom .= "</ul>\n";
+				$bottom .= "See the <a href='eventstatus.php'>Events page</a> for more details and signup.</p>\n";
+			}
+		}
+		
+		renderEventBlock($hdr, $left, $right, $bottom);
+	}
+
+
+	# Print the events in order by what comes first
+	
+		$ocdt = dbgetsingleton("SELECT MIN(eventdt) ed FROM event WHERE eventcd LIKE 'OC%' AND CURDATE() <= eventdt AND active",
+				"ed");
+		$ltcdt = dbgetsingleton("SELECT MIN(eventdt) ed FROM event WHERE eventcd LIKE 'LTC%' AND CURDATE() <= eventdt AND active",
+			"ed");
+		$pucdt = dbgetsingleton("SELECT MIN(eventdt) ed FROM event WHERE eventcd LIKE 'PC%' AND CURDATE() <= eventdt AND active",
+			"ed");
+		
+#		print "ocdt: $ocdt<br/>ltcdt: $ltcdt<br/>pucdt: $pucdt<br/>";
+
+		?>
+		
+<!--		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2FATLcurling.org&amp;width=450&amp;height=46&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:46px;" allowTransparency="true"></iframe> -->
+
+		<?php
+
+		if ($ocdt < $ltcdt) {
+			if ($pucdt < $ocdt) {
+				printPickupCurling();
+				printOpenCurling();
+				printLearnToCurl();
+			} else {
+				printOpenCurling();
+				if ($pucdt < $ltcdt) {
+					printPickupCurling();
+					printLearnToCurl();
+				} else {
+					printPickupCurling();
+					printLearnToCurl();
+				}
+			}
+		} else {
+			if ($pucdt < $ltcdt) {
+				printPickupCurling();
+				printLearnToCurl();
+				printOpenCurling();
+			} else {
+				printLearnToCurl();
+				if ($pucdt < $ocdt) {
+					printPickupCurling();
+					printOpenCurling();
+				} else {
+					printOpenCurling();
+					printPickupCurling();
+				}
+			}
+		}
+				
+		?>
+
+<!--		<h2>Photos Now Available</h2>
+		<div class="bodytext">
+		<p>
+		Atlanta Curling Club welcomes our new vendor, <a href="http://hhmultimediallc.zenfolio.com/">H&H Multimedia LLC</a>, who joined us on Monday, Feb 27 for our Monday Night Curling event to
+		cover the event.
+		You can find the shots they took at <a href="http://hhmultimediallc.zenfolio.com/p666272751">their web site</a> and you can purchase hi-res digital photos for your own use for 
+		only $1 each.
+		We encourage you to support Steve and Sandy Hampton in their photographic efforts -- 
+		it is a highly cost effective way for us to get some photography for our events!
+		</p>
+		</div>
+		-->
+<!--		
+		<h2>Web Site Registration</h2>
+		<div class="bodytext">
+		<p>As part of the online signup for scheduled curling events, please create yourself an account using the <b>login / register</b> link in the upper right corner. You can then go to the <a href="eventstatus.php">Events page</a> to register for upcoming events.</p>
+		<p>Online registration for events requires a <a href="http://paypal.com">PayPal account</a>, create one there if you do not have one (click the <b>Sign Up</b> link at the top of the page). </p>
+		<p>PayPal is a trusted vendor of the Atlanta Curling Club, and all online payments will be processed by them.
+		You will need to have an account on PayPal, and you will need to be able to log into it when reservations are made.
+		(If you already have a PayPal account you will not have to create a new one.)</p>
+		</div>
+
+		<h2>Marietta Ice Center</h2>
+		<div class="bodytext">
+		To find the Marietta Ice Center be persistent! It is located behind the Parkaire Mall at the intersection of Johnson Ferry and Lower Roswell.
+
+			<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Marietta+Ice+Center,+4880+Lower+Roswell+Rd,+Marietta,+GA+30068&amp;aq=&amp;sll=33.978603,-84.48822&amp;sspn=0.154876,0.308647&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Marietta+Ice+Center,&amp;hnear=4880+Lower+Roswell+Rd,+Marietta,+Cobb,+Georgia+30068&amp;t=m&amp;ll=33.965697,-84.40798&amp;spn=0.008542,0.013733&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Marietta+Ice+Center,+4880+Lower+Roswell+Rd,+Marietta,+GA+30068&amp;aq=&amp;sll=33.978603,-84.48822&amp;sspn=0.154876,0.308647&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Marietta+Ice+Center,&amp;hnear=4880+Lower+Roswell+Rd,+Marietta,+Cobb,+Georgia+30068&amp;t=m&amp;ll=33.965697,-84.40798&amp;spn=0.008542,0.013733&amp;z=16&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>		
+
+		</div>
+-->
+<?php
+	foreach($page->block as $block) 
+		if ($block->seq >= 1000) 
+			$block->display();
+
+	print "</div><!-- col1 -->\n";
+
+	DynHtmlPage::upcoming();
+
+	print "</div><!-- colleft -->\n";
+	print "</div><!-- colmask -->\n";
+
+
+	DynHtmlPage::footer();
+	DynHtmlPage::docFooter();
+
+?>

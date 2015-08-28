@@ -1,0 +1,46 @@
+id: 2-2.0.r2/0
+type: file
+count: 0
+text: 1 0 349 743 fa04707e80d004ad2237dc87ee2c9b43 2ea581939a41aaea0c528e97fa5ca9668ed951fc 1-1/_4
+cpath: /repo/atlcurling
+copyroot: 0 /
+
+PLAIN
+K 10
+atlcurling
+V 15
+file 2-2.0.r2/0
+END
+ENDREP
+id: 0-2.0.r2/227
+type: dir
+count: 0
+text: 2 173 41 41 60d2f92ef010499ff58f2d1914274639
+cpath: /repo
+copyroot: 0 /
+
+PLAIN
+K 4
+repo
+V 16
+dir 0-2.0.r2/227
+K 5
+trunk
+V 17
+file 0-1.0.r1/362
+END
+ENDREP
+id: 0.0.r2/423
+type: dir
+pred: 0.0.r1/577
+count: 2
+text: 2 342 68 68 698c41486c3b11c9d3a3a0b2dcd0a205
+cpath: /
+copyroot: 0 /
+
+_0.0.t1-1 add-dir false false /repo
+
+_2.0.t1-1 add-file true false /repo/atlcurling
+
+
+423 549

@@ -1,0 +1,4 @@
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^www\.atlcurling\.com$ [NC]
+#RewriteRule ^(.*)$ http://www.atlcurling.org/$1 [L,R=301]
+

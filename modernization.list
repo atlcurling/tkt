@@ -1,0 +1,32 @@
+aboutus.php -- complete
+calendar.php -- complete
+contactus.php -- complete
+contactus.send.php -- complete
+election.php -- complete
+eventorder.php -- complete
+eventstatus.php -- complete
+faqOneBig.php -- complete
+faq.php -- complete
+funk.php -- complete
+include.php -- infrastructure, no change needed
+index.php -- complete
+joinus.php -- complete
+leagues.php -- complete
+login.php -- complete
+main2.php -- complete
+main.php -- complete
+media.php -- obsolete, delete
+payment.cancel.php -- obsolete, deleted
+payment.finish.php -- obsolete, deleted
+payment.php -- obsolete, deleted
+photos.php -- obsolete, delete
+ppipn.php -- infrastructure, no change needed
+ppreturn.php -- obsolete, deleted
+pubs.php -- obsolete, delete
+reports.php@ -- actually reports/index.php, complete
+schedule.php -- obsolete, deleted
+sendcontactus.php -- obsolete, deleted
+settings2.php -- infrastructure, no change needed
+settings.php -- infrastructure, no change needed, will be obsolete
+ssv3_directory.php -- unknown, quarantined
+test.php -- complete

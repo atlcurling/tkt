@@ -1,0 +1,11 @@
+7490;new_session;0;107.212.64.243;;;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36;1386634458;
+7491;new_session;0;208.115.113.89;;;Mozilla/5.0 (compatible, Ezooms/1.0, help@moz.com);1386709785;
+7492;new_session;0;208.15.90.2;;http://www.atlcurling.org/faq.php;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711354;
+7493;new_session;0;208.15.90.2;;http://www.atlcurling.org/faq.php;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711354;
+7493;show_category;2;208.15.90.2;sid=7493&lang=en&action=show&cat=2;http://www.atlcurling.org/faq/;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711369;
+7493;article_view;13;208.15.90.2;action=artikel&cat=2&id=13&artlang=en;http://www.atlcurling.org/faq/index.php?sid=7493&lang=en&action=show&cat=2;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711382;
+7493;show_category;2;208.15.90.2;sid=7493&lang=en&action=show&cat=2;http://www.atlcurling.org/faq/;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711388;
+7493;article_view;12;208.15.90.2;action=artikel&cat=2&id=12&artlang=en;http://www.atlcurling.org/faq/index.php?sid=7493&lang=en&action=show&cat=2;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711390;
+7493;article_view;9;208.15.90.2;action=artikel&cat=2&id=9&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=2&id=12&artlang=en;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711424;
+7493;article_view;16;208.15.90.2;action=artikel&cat=3&id=16&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=2&id=9&artlang=en;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711439;
+7493;article_view;4;208.15.90.2;action=artikel&cat=1&id=4&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=3&id=16&artlang=en;Mozilla/5.0 (compatible, MSIE 9.0, Windows NT 6.1, WOW64, Trident/5.0);1386711500;

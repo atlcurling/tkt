@@ -1,0 +1,13 @@
+8210;new_session;0;24.30.42.106;;http://www.atlcurling.org/faq.php;Mozilla/5.0 (X11, Ubuntu, Linux i686, rv:26.0) Gecko/20100101 Firefox/26.0;1390692194;
+8211;new_session;0;208.115.111.73;action=instantresponse;;Mozilla/5.0 (compatible, Ezooms/1.0, help@moz.com);1390705910;
+8212;instantresponse;0;208.115.111.73;action=instantresponse;;Mozilla/5.0 (compatible, Ezooms/1.0, help@moz.com);1390705910;
+8213;new_session;0;91.231.40.27;action=add&cat=0;http://www.atlcurling.org/faq/index.php?action=add&cat=0;Mozilla/5.0 (Windows NT 5.1, rv:16.0) Gecko/20121026 Firefox/16.0 SeaMonkey/2.13.2;1390722881;
+8214;new_entry;0;91.231.40.27;action=add&cat=0;http://www.atlcurling.org/faq/index.php?action=add&cat=0;Mozilla/5.0 (Windows NT 5.1, rv:16.0) Gecko/20121026 Firefox/16.0 SeaMonkey/2.13.2;1390722881;
+8213;registration;0;91.231.40.27;sid=8213&lang=en&action=register;http://www.atlcurling.org/faq/?sid=8213&lang=en&action=register;Mozilla/5.0 (Windows NT 5.1, rv:16.0) Gecko/20121026 Firefox/16.0 SeaMonkey/2.13.2;1390722895;
+8215;new_session;0;91.231.40.27;action=add&cat=0;http://atlcurling.info/faq/index.php?action=add&cat=0;Mozilla/5.0 (Windows NT 6.1, WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.91 Safari/537.11;1390741734;
+8216;new_entry;0;91.231.40.27;action=add&cat=0;http://atlcurling.info/faq/index.php?action=add&cat=0;Mozilla/5.0 (Windows NT 6.1, WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.91 Safari/537.11;1390741734;
+8215;registration;0;91.231.40.27;sid=8215&lang=en&action=register;http://atlcurling.info/faq/?sid=8215&lang=en&action=register;Mozilla/5.0 (Windows NT 6.1, WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.91 Safari/537.11;1390741753;
+8217;new_session;0;71.234.68.61;action=artikel&cat=2&id=8&artlang=en;https://www.google.com/;Mozilla/5.0 (iPad, CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53;1390765802;
+8218;article_view;8;71.234.68.61;action=artikel&cat=2&id=8&artlang=en;https://www.google.com/;Mozilla/5.0 (iPad, CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53;1390765802;
+8219;new_session;0;70.210.65.20;action=send2friend&cat=3&id=17&artlang=en;https://www.google.com/;Mozilla/5.0 (Linux, Android 4.1.2, DROID RAZR HD Build/9.8.1Q-94-1) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31;1390768658;
+8220;send2friend;0;70.210.65.20;action=send2friend&cat=3&id=17&artlang=en;https://www.google.com/;Mozilla/5.0 (Linux, Android 4.1.2, DROID RAZR HD Build/9.8.1Q-94-1) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31;1390768658;

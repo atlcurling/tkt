@@ -1,0 +1,148 @@
+/* Style: http://colorschemedesigner.com/#3w41Tw0w0w0w0 */
+
+body
+{
+	color: white;
+	background-color: #65a5d1;
+	font-family: "Verdana", "sans serif";
+	font-size: 12px;
+}
+
+h1
+{
+	background-color: #03406a;
+	color: white;
+	font-size: 18px;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 2px;
+}
+
+h3
+{
+	background-color: #03406a;
+	color: white;
+	font-size: 16px;
+	padding: 5px 10px 5px 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+li
+{
+	font-family: "Verdana", "sans serif";
+	font-size: 16px;
+	color: black;
+}
+
+a {
+	color: white;
+}
+
+a.navbar
+{
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	background-color: #0a64a4;
+	padding: 0 2px 2px 2px;
+}
+
+table.dispsql
+{
+	border: 5px solid #ff9000;
+	background-color: #3e94d1;
+}
+
+td.dispsql
+{
+	border: 1px dashed #ff9000;
+}
+
+td.dispsqlhdr {
+	font-size: 18px;
+	padding: 8px 8px 8px 8px;
+	vertical-align: middle;
+	align: center;
+}
+
+td.dispsqldtl {
+	height: 100%;
+	white-space: pre;
+	font-family: "monospace", "sans-serif";
+	font-size: 14px;
+}
+
+table.disprow
+{
+	border: 5px solid #ff9000;
+	background-color: #0a64a4;
+}
+
+td.disprow
+{
+	border: 1px dashed #ff9000;
+	color: white;
+}
+
+div.warnmsg
+{
+	background-color: yellow;
+	color: black;
+	font-size: 16px;
+	padding: 16px 2em 16px 2em;
+}
+
+span.warnmsg
+{
+	background-color: yellow;
+	color: black;
+	font-size: 16px;
+	padding: 4px 4px 4px 4px;
+}
+
+span.errmsg
+{
+	background-color: red;
+	color: white;
+	font-size: 18px;
+	padding: 4px 4px 4px 4px;
+}
+
+div.debug {
+	background-color: black;
+	color: white;
+	padding: 1em 1em 1em 1em;
+}
+
+table.debug {
+	background-color: black;
+	color: white;
+	padding: 1em 1em 1em 1em;
+}
+
+td.debug {
+	border: 1px white solid;
+	padding: 4px 4px 4px 4px;
+	min-width: 80px;
+	vertical-align: top;
+}
+
+span.loginprompt {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 4px 8px 4px 8px;
+	color: black;
+	background-color: pink;
+}
+
+a.loginprompt {
+	color: black;
+}
+
+td.loginbox {
+	min-width: 400px;
+	vertical-align: top;
+	border: 2px black solid;
+	padding: 4px 4px 4px 4px;
+}

@@ -1,0 +1,337 @@
+td,th {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 100%;
+	
+	background-image: url(image/bgtest2.png);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+#Page {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#Header {
+	clear: both;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+
+#Header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-color: #bfc3c8;
+}
+
+#Header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-size:12px;
+}
+#Header ul li img {
+	border: none;
+}
+
+#Header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:0 5px 0 0;
+	text-align:center;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.5em;
+}
+#Header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+#Header ul li a.active,
+#Header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+#Header ul li a span {
+	display:block;
+}
+
+#TopNavBar {
+	width: 100%;
+	background-color: #000000;
+}
+
+.colmask {
+	position: relative;
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.colright,
+.colleft {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.col1,
+.col2 {
+	float: left;
+	position: relative;
+	padding: 0 0 0 0;
+	overflow: hidden;
+}
+
+.leftmenu {
+		/* right column background colour */
+}
+.leftmenu .colleft {
+/*	right: 75%;			/* right column width */
+	right: 80%;
+	background-color: #2575c8;	/* left column background colour */
+}
+.leftmenu .col1 {
+/*	width: 71%;			/* right column content width */
+	width: 78%;
+	left: 102%;
+}
+.leftmenu .col2 {
+/*	width: 21%;			/* left column content width (column width minus left and right padding) */
+	width: 16%;
+/*	left: 6%;			/* (right column left and right padding) plus (left column left padding) */
+	left: 4%;
+}
+
+
+.col2 ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.col2 ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#Footer {
+	clear: both;
+	float: left;
+	width: 988px;
+	padding: 6px 6px 6px 6px;
+	background-color: #bfc3c8;
+	border-top: 1px solid #000;
+	font-size: 10px;
+	text-align: center;
+}
+
+#Footer p {
+	margin: 0;
+/*	line-height: 4px;
+*/
+}
+
+.AddressBlock {
+	list-style: none;
+	font-size: large;
+}
+
+/* Error check messages */
+
+div .notice {
+	margin: 12px 0 12px 0;
+	padding: 6px 6px 6px 6px;
+	color: black;
+	background-color: #33CCFF;
+	border: 2px solid black;
+	font-size: 125%;
+}
+
+div .warning {
+	margin: 12px 0 12px 0;
+	padding: 6px 6px 6px 6px;
+	color: black;
+	background-color: yellow;
+	border: 2px solid black;
+	font-size: 125%;
+}
+
+div .error {
+	margin: 12px 0 12px 0;
+	padding: 6px 6px 6px 6px;
+	color: white;
+	background-color: red;
+	border: 2px solid black;
+	font-size: 125%;
+}
+
+.col2 #Title {
+ 	background-color: white;
+	margin: .5em 0 .5em 0;
+	padding: .5em .7em .5em .7em;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div .event {
+	background-color: white;
+	margin: .5em 0 .5em 0;
+	padding: .5em .7em .5em .7em;
+	border-radius: 15px;
+}
+
+/* Login prompt styles */
+
+span.loginprompt {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 4px 8px 4px 8px;
+	color: black;
+	background-color: #FF4444;
+}
+
+a.loginprompt {
+	color: black;
+}
+
+td.loginbox {
+	min-width: 400px;
+	vertical-align: top;
+	border: 2px black solid;
+	padding: 4px 4px 4px 4px;
+}
+
+/* Debug styles */
+
+div.debug {
+	background-color: black;
+	color: white;
+	padding: 1em 1em 1em 1em;
+}
+
+table.debug {
+	background-color: black;
+	color: white;
+	padding: 1em 1em 1em 1em;
+}
+
+td.debug {
+	border: 1px white solid;
+	padding: 4px 4px 4px 4px;
+	min-width: 80px;
+	vertical-align: top;
+}
+
+/* SQL statement display */
+
+table.dispsql
+{
+	border: 5px solid #ff9000;
+	background-color: #3e94d1;
+}
+
+td.dispsql
+{
+	border: 1px dashed #ff9000;
+}
+
+td.dispsqlhdr {
+	font-size: 18px;
+	padding: 8px 8px 8px 8px;
+	vertical-align: middle;
+	align: center;
+}
+
+td.dispsqldtl {
+	height: 100%;
+	white-space: pre;
+	font-family: "monospace", "sans-serif";
+	font-size: 14px;
+}
+
+/* Errors and warnings */
+
+div.warnmsg
+{
+	background-color: yellow;
+	color: black;
+	font-size: 16px;
+	padding: 1em 2em 2em 2em;
+}
+
+span.warnmsg
+{
+	background-color: yellow;
+	color: black;
+	font-size: 16px;
+	padding: 4px 4px 4px 4px;
+}
+
+span.errmsg
+{
+	background-color: red;
+	color: white;
+	font-size: 18px;
+	padding: 4px 4px 4px 4px;
+}
+
+/* Headings */
+
+
+h1 {
+	background-color: black;
+	padding: 4px 12px 4px 12px;
+	color: white;
+}
+
+h2 {
+	border: black solid 4px;
+	padding: 4px 12px 4px 12px;
+}
+
+h3 {
+	border: black solid 4px;
+	padding: 4px 12px 4px 12px;
+}
+
+h1.center {
+	background-color: black;
+	padding: 4px 12px 4px 12px;
+	color: white;
+	text-align: center;
+}
+
+h2.center {
+	border: black solid 4px;
+	padding: 4px 12px 4px 12px;
+	text-align: center;
+}
+
+h3.center {
+	border: black solid 4px;
+	padding: 4px 12px 4px 12px;
+	text-align: center;
+}
+
+

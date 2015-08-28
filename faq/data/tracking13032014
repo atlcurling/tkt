@@ -1,0 +1,16 @@
+10507;new_session;0;37.187.140.135;action=artikel&cat=5&id=20&artlang=en;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) , .NET CLR 2.0.50727 , .NET CLR 4.0.30319);1394720093;
+10508;article_view;20;37.187.140.135;action=artikel&cat=5&id=20&artlang=en;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) , .NET CLR 2.0.50727 , .NET CLR 4.0.30319);1394720093;
+10507;article_view;20;37.187.140.135;action=artikel&cat=5&id=20&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=5&id=20&artlang=en;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1);1394720095;
+10509;new_session;0;37.187.140.135;action=artikel&cat=5&id=20&artlang=en;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) , .NET CLR 1.0.3705);1394720096;
+10510;article_view;20;37.187.140.135;action=artikel&cat=5&id=20&artlang=en;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) , .NET CLR 1.0.3705);1394720096;
+10511;new_session;0;74.121.113.3;;http://atlcurling.org/faq.php;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36;1394734081;
+10511;show_category;7;74.121.113.3;sid=10511&lang=en&action=show&cat=7;http://atlcurling.org/faq/;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36;1394734091;
+10511;article_view;25;74.121.113.3;action=artikel&cat=7&id=25&artlang=en;http://atlcurling.org/faq/index.php?sid=10511&lang=en&action=show&cat=7;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36;1394734094;
+10511;show_category;7;74.121.113.3;sid=10511&lang=en&action=show&cat=7;http://atlcurling.org/faq/;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36;1394734126;
+10512;new_session;0;208.115.111.73;lang=en&action=show&cat=3;;Mozilla/5.0 (compatible, Ezooms/1.0, help@moz.com);1394736737;
+10513;show_category;3;208.115.111.73;lang=en&action=show&cat=3;;Mozilla/5.0 (compatible, Ezooms/1.0, help@moz.com);1394736737;
+10514;new_session;0;216.239.44.25;;http://www.atlcurling.org/faq.php;Mozilla/5.0 (Macintosh, Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36;1394740477;
+10514;show_all_categories;0;216.239.44.25;sid=10514&lang=en&action=show;http://www.atlcurling.org/faq/;Mozilla/5.0 (Macintosh, Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36;1394740490;
+10515;old_session;10514;66.249.85.58;sid=10514&lang=en&action=show;http://www.atlcurling.org/faq/;Mozilla/4.0 (compatible, MSIE 8.0, Windows NT 6.1, Trident/4.0);1394742112;
+10514;show_all_categories;0;66.249.85.58;sid=10514&lang=en&action=show;http://www.atlcurling.org/faq/;Mozilla/4.0 (compatible, MSIE 8.0, Windows NT 6.1, Trident/4.0);1394742112;
+10516;new_session;0;91.236.74.252;;http://www.atlcurling.org/faq/index.php;Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11;1394751551;

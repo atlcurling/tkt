@@ -1,0 +1,7 @@
+53725;new_session;0;67.177.235.204;;http://www.atlcurling.org/faq/index.php?action=artikel&cat=5&id=20&artlang=en;Mozilla/5.0 (Macintosh, Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17;1435615313;
+53725;show_category;5;67.177.235.204;sid=53725&lang=en&action=show&cat=5;http://atlcurling.info/faq/;Mozilla/5.0 (Macintosh, Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17;1435615410;
+53725;article_view;19;67.177.235.204;action=artikel&cat=5&id=19&artlang=en;http://atlcurling.info/faq/index.php?sid=53725&lang=en&action=show&cat=5;Mozilla/5.0 (Macintosh, Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17;1435615413;
+53726;new_session;0;78.46.156.169;;;Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36;1435671389;
+53726;ask_question;0;78.46.156.169;sid=53726&lang=de&action=ask&category_id=0;;Mozilla/5.0 (Windows NT 6.2, rv:16.0) Gecko/20100101 Firefox/16.0;1435671392;
+53726;contact;0;78.46.156.169;sid=53726&lang=de&action=contact;;Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36;1435671394;
+53727;new_session;0;203.133.168.87;;;Mozilla/5.0 (compatible, MSIE or Firefox mutant, not on Windows server,) Daumoa/4.0;1435698472;

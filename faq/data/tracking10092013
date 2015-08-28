@@ -1,0 +1,17 @@
+72;new_session;0;99.108.233.140;;http://atlcurling.org/faq.php;Mozilla/5.0 (Windows NT 6.0, WOW64, rv:23.0) Gecko/20100101 Firefox/23.0;1378819128;
+73;new_session;0;50.73.75.245;;http://www.atlcurling.org/faq.php;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378824888;
+73;article_view;16;50.73.75.245;sid=73&lang=en&action=artikel&cat=3&id=16&artlang=en;http://www.atlcurling.org/faq/;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378824895;
+73;article_view;9;50.73.75.245;action=artikel&cat=2&id=9&artlang=en;http://www.atlcurling.org/faq/index.php?sid=73&lang=en&action=artikel&cat=3&id=16&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378824959;
+73;article_view;12;50.73.75.245;action=artikel&cat=2&id=12&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=2&id=9&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378824968;
+73;article_view;15;50.73.75.245;action=artikel&cat=2&id=15&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=2&id=12&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378824974;
+73;article_view;2;50.73.75.245;action=artikel&cat=1&id=2&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=2&id=15&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378824982;
+73;article_view;17;50.73.75.245;action=artikel&cat=3&id=17&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=1&id=2&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825018;
+73;article_view;7;50.73.75.245;action=artikel&cat=1&id=7&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=3&id=17&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825030;
+73;article_view;18;50.73.75.245;action=artikel&cat=4&id=18&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=1&id=7&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825066;
+73;show_category;2;50.73.75.245;action=show&cat=2;http://www.atlcurling.org/faq/;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825140;
+73;show_category;3;50.73.75.245;action=show&cat=3;http://www.atlcurling.org/faq/index.php?action=show&cat=2;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825153;
+73;show_category;4;50.73.75.245;action=show&cat=4;http://www.atlcurling.org/faq/index.php?action=show&cat=3;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825160;
+73;show_category;1;50.73.75.245;action=show&cat=1;http://www.atlcurling.org/faq/index.php?action=show&cat=4;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825163;
+73;article_view;6;50.73.75.245;action=artikel&cat=1&id=6&artlang=en;http://www.atlcurling.org/faq/index.php?action=show&cat=1;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825168;
+73;show_category;1;50.73.75.245;action=show&cat=1;http://www.atlcurling.org/faq/index.php?action=artikel&cat=1&id=6&artlang=en;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825185;
+73;article_view;3;50.73.75.245;action=artikel&cat=1&id=3&artlang=en;http://www.atlcurling.org/faq/index.php?action=show&cat=1;Mozilla/5.0 (Windows NT 6.1, rv:23.0) Gecko/20100101 Firefox/23.0;1378825194;

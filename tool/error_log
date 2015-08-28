@@ -1,0 +1,11 @@
+[29-Dec-2014 08:42:16 America/Denver] PHP Notice:  Undefined variable: argv in - on line 14
+[29-Dec-2014 08:42:16 America/Denver] PHP Warning:  in_array() expects parameter 2 to be array, null given in - on line 21
+[29-Dec-2014 08:42:16 America/Denver] PHP Warning:  Invalid argument supplied for foreach() in - on line 46
+[29-Dec-2014 08:43:43 America/Denver] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'Undefined index: argv' in phar:///home7/atlcurli/public_html/tool/composer.phar/vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php:57
+Stack trace:
+#0 phar:///home7/atlcurli/public_html/tool/composer.phar/vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php(57): Composer\Util\ErrorHandler::handle(8, 'Undefined index...', 'phar:///home7/a...', 57, Array)
+#1 phar:///home7/atlcurli/public_html/tool/composer.phar/vendor/symfony/console/Symfony/Component/Console/Application.php(116): Symfony\Component\Console\Input\ArgvInput->__construct()
+#2 phar:///home7/atlcurli/public_html/tool/composer.phar/src/Composer/Console/Application.php(83): Symfony\Component\Console\Application->run(NULL, Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 phar:///home7/atlcurli/public_html/tool/composer.phar/bin/composer(43): Composer\Console\Application->run()
+#4 /home7/atlcurli/public_html/tool/composer.phar(24): require('phar:///home7/a...')
+ in phar:///home7/atlcurli/public_html/tool/composer.phar/vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php on line 57

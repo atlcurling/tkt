@@ -1,0 +1,2 @@
+[27-Dec-2014 03:05:55 America/Denver] PHP Notice:  Undefined variable: db in /home7/atlcurli/public_html/faq/cron.verifyurls.php on line 128
+[27-Dec-2014 03:05:55 America/Denver] PHP Fatal error:  Call to a member function dbclose() on a non-object in /home7/atlcurli/public_html/faq/cron.verifyurls.php on line 128

@@ -1,0 +1,10 @@
+181;new_session;0;50.167.46.143;;http://atlcurling.org/faq.php;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098636;
+181;article_view;13;50.167.46.143;sid=181&lang=en&action=artikel&cat=2&id=13&artlang=en;http://atlcurling.org/faq/;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098655;
+181;article_view;7;50.167.46.143;action=artikel&cat=1&id=7&artlang=en;http://atlcurling.org/faq/index.php?sid=181&lang=en&action=artikel&cat=2&id=13&artlang=en;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098663;
+181;show_category;5;50.167.46.143;action=show&cat=5;http://atlcurling.org/faq/index.php?action=artikel&cat=1&id=7&artlang=en;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098682;
+181;article_view;20;50.167.46.143;action=artikel&cat=5&id=20&artlang=en;http://atlcurling.org/faq/index.php?action=show&cat=5;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098687;
+181;article_view;9;50.167.46.143;action=artikel&cat=2&id=9&artlang=en;http://atlcurling.org/faq/index.php?action=artikel&cat=5&id=20&artlang=en;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098700;
+181;article_view;3;50.167.46.143;action=artikel&cat=1&id=3&artlang=en;http://atlcurling.org/faq/index.php?action=artikel&cat=2&id=9&artlang=en;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098705;
+181;show_category;6;50.167.46.143;action=show&cat=6;http://atlcurling.org/faq/index.php?action=artikel&cat=1&id=3&artlang=en;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098713;
+181;article_view;21;50.167.46.143;action=artikel&cat=6&id=21&artlang=en;http://atlcurling.org/faq/index.php?action=show&cat=6;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098716;
+181;article_view;14;50.167.46.143;action=artikel&cat=2&id=14&artlang=en;http://atlcurling.org/faq/index.php?action=artikel&cat=6&id=21&artlang=en;Mozilla/5.0 (compatible, MSIE 10.0, Windows NT 6.1, WOW64, Trident/6.0);1381098731;

@@ -1,0 +1,10 @@
+54006;new_session;0;68.180.228.37;action=open;;Mozilla/5.0 (compatible, Yahoo! Slurp, http://help.yahoo.com/help/us/ysearch/slurp);1436569838;
+54007;open_questions;0;68.180.228.37;action=open;;Mozilla/5.0 (compatible, Yahoo! Slurp, http://help.yahoo.com/help/us/ysearch/slurp);1436569838;
+54008;new_session;0;204.124.183.98;action=artikel&cat=2&id=24&artlang=en;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) , .NET CLR 2.0.50727 , .NET CLR 4.0.30319);1436580511;
+54009;article_view;24;204.124.183.98;action=artikel&cat=2&id=24&artlang=en;;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) , .NET CLR 2.0.50727 , .NET CLR 4.0.30319);1436580511;
+54010;old_session;54008;23.94.173.64;action=artikel&cat=2&id=24&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=2&id=24&artlang=en;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) );1436580531;
+54008;article_view;24;23.94.173.64;action=artikel&cat=2&id=24&artlang=en;http://www.atlcurling.org/faq/index.php?action=artikel&cat=2&id=24&artlang=en;Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1, Mozilla/4.0 (compatible, MSIE 6.0, Windows NT 5.1, SV1) );1436580531;
+54011;new_session;0;212.227.100.244;action=search;;Mozilla/4.0 (compatible, MSIE 7.0, Windows NT 6.0);1436602192;
+54012;fulltext_search;0;212.227.100.244;action=search;;Mozilla/4.0 (compatible, MSIE 7.0, Windows NT 6.0);1436602192;
+54013;fulltext_search;;212.227.100.244;action=search;;Mozilla/4.0 (compatible, MSIE 7.0, Windows NT 6.0);1436602192;
+54014;new_session;0;69.84.207.246;;;LSSRocketCrawler/1.0 LightspeedSystems;1436607642;
